@@ -89,6 +89,13 @@ To use the trained model:
 python test.py CenterNet-104 --testiter 480000 --split <split>
 ```
 
+or
+
+```
+python test_folder.py CenterNet-104 --testiter 480000 --evalfolder <path>
+```
+
+
 To train CenterNet-52:
 ```
 python train.py CenterNet-52
