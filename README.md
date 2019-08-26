@@ -49,7 +49,7 @@ After you create the environment, activate it.
 source activate CenterNet
 ```
 
-## Compiling Corner Pooling Layers
+## Compiling Corner Pooling Layers (GCC 4.9.2 or above)
 ```
 cd <CenterNet dir>/models/py_utils/_cpools/
 python setup.py install --user
@@ -100,6 +100,11 @@ We also provide a trained model for `CenterNet-52`, which is trained for 480k it
 To use the trained model:
 ```
 python test.py CenterNet-52 --testiter 480000 --split <split>
+```
+or
+
+```
+python test_folder.py CenterNet-52 --testiter 480000 --evalfolder <path>
 ```
 
 We also include a configuration file for multi-scale evaluation, which is `CenterNet-104-multi_scale.json` and `CenterNet-52-multi_scale.json` in this repo, respectively. 
